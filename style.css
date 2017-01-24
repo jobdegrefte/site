@@ -246,6 +246,7 @@ i {color: #000}
 	display: flex;
 	width: auto;
 	border-right: 0px;
+	height: 100%;
 }
 
 .sitenav {
