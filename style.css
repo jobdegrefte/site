@@ -222,7 +222,7 @@ h1 {
 
 i {color: #000}
 
-@media (max-width: 500px) {
+@media (max-width: 1024px) {
 
 .container {
 	display: block;
