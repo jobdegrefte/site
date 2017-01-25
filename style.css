@@ -263,10 +263,8 @@ i {color: #000}
 }
 
 .mobilenav.is-open {
-	display: flex;
 	transform: translateY(20%);
 	transition: all 0.5s ease-in-out;
-	justify-content: center;
 
 }
 
