@@ -222,7 +222,7 @@ h1 {
 
 i {color: #000}
 
-@media (max-width: 1024px) {
+@media (max-width: 775px) {
 
 .container {
 	display: block;
@@ -246,7 +246,6 @@ i {color: #000}
 	display: flex;
 	width: auto;
 	border-right: 0px;
-	height: 100%;
 }
 
 .sitenav {
