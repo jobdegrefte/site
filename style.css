@@ -5,12 +5,10 @@ html {
 }
 
 .container {
-	font: 100%/1.5
-	font: Arial;
+	font-family: "Merriweather", Times, serif;
 	display: flex;
 	height: 100%;
 	flex-direction: row;
-
 }
 
 .header {
@@ -86,6 +84,7 @@ html {
 	list-style: none;
 	margin: 0;
 	padding: 0;
+	font-size: 150%;
 }
 
 .mobilenav li {
@@ -116,9 +115,8 @@ html {
 	align-items: center;
 	justify-content: center;
 }
-
 .textinset {
-	width: 60%;
+	width: 70%;
 }
 
 h1 {
@@ -148,7 +146,9 @@ td,th{
    border-bottom: 10px solid #FFF;
  }
 
-
+a {
+	color: black;
+}
 
 .about {
 	background-color: white;
@@ -164,7 +164,7 @@ td,th{
 }
 
 .lefttext {
-	margin: 100px;
+	margin: 22%;
 }
 
 .image {
@@ -243,8 +243,9 @@ i {color: #000}
 
 .nav-wrapper {
 	display: flex;
-	width: auto;
+	width: 100%;
 	border-right: 0px;
+	box-sizing: border-box;
 }
 
 .sitenav {
@@ -259,19 +260,25 @@ i {color: #000}
 
 .nav-toggle {
 	display: flex;
-	margin: 10px;
+	margin: 10px 20px;
+	flex-direction: row;
+}
+
+.nav-toggle span {
+	align-items: flex-end;
 }
 
 .mobilenav.is-open {
 	display: flex;
+	justify-content: center;
+	width: 100%;
 	transform: translateY(20%);
-	transition: all 0.5s ease-in-out;
+
 
 }
 
-#nav_home a:hover, #nav_research a:hover, #nav_teaching a:hover, #nav_cv a:hover {
-  border-bottom: 0px solid black;
-
+.textinset {
+	width: 80%;
 }
 
 .Main-wrapper {
@@ -298,5 +305,11 @@ i {color: #000}
 	width: auto;
 	padding: 1px;
 	margin: 0;
+}
+.lefttext {
+	margin: 10%;
+}
+.main-heading{
+	width: 70%;
 }
 }
