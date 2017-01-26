@@ -6,9 +6,14 @@ html {
 
 .container {
 	font-family: "Merriweather", Times, serif;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	height: 100%;
-	flex-direction: row;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
 }
 
 .header {
@@ -21,6 +26,8 @@ html {
 	width: 135px;
 	height: 100%;
 	padding: 10px;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	border-right: 2px dashed black;
 }
@@ -29,7 +36,9 @@ html {
 	height: 50px;
 	width: 50px;
 	display: none;
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	cursor: pointer;
 	margin: 0;
 }
@@ -41,6 +50,7 @@ html {
 	width: 50px;
 	background-color: #333;
 	position: relative;
+	-webkit-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
 
 }
@@ -58,15 +68,19 @@ html {
 }
 
 .nav-toggle.is-open span:before {
-	transform-origin: center;
-	transform: rotate(-45deg);
+	-webkit-transform-origin: center;
+	        transform-origin: center;
+	-webkit-transform: rotate(-45deg);
+	        transform: rotate(-45deg);
 	top: 1.5px;
 
 }
 
 .nav-toggle.is-open span:after {
-	transform-origin: center;
-	transform: rotate(45deg);
+	-webkit-transform-origin: center;
+	        transform-origin: center;
+	-webkit-transform: rotate(45deg);
+	        transform: rotate(45deg);
 	top: -1.5px;
 
 }
@@ -77,7 +91,8 @@ html {
 	width: 100%;
 	background: white;
 	padding: 30px 0 20px;
-	transform: translateY(-100%);
+	-webkit-transform: translateY(-100%);
+	        transform: translateY(-100%);
 }
 
 .mobilenav ul {
@@ -94,13 +109,17 @@ html {
 
 .Main-wrapper {
 	background-color: orangered;
-	flex: 1;
+	-webkit-box-flex: 1;
+	    -ms-flex: 1;
+	        flex: 1;
 	min-height: 100%
 }
 
 .backimage {
 	background-color: white;
 	height: 100vh;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 }
 
@@ -110,10 +129,16 @@ html {
 
 .Section{
 	background-color: white;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	min-height: 100vh;
-	align-items: center;
-	justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 }
 .textinset {
 	width: 70%;
@@ -152,15 +177,24 @@ a {
 
 .about {
 	background-color: white;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	height: 100%;
 }
 
 .left {
 	width: 60%;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 }
 
 .lefttext {
@@ -231,12 +265,12 @@ i {color: #000}
 	width: 100%;
 	height: 50px;
 	position: fixed;
-	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
-  display: -ms-flexbox;      /* TWEENER - IE 10 */
-  display: -webkit-flex;     /* NEW - Chrome */
+	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */     /* NEW - Chrome */
   display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
-	justify-content: flex-end;
+	-webkit-box-pack: end;
+	    -ms-flex-pack: end;
+	        justify-content: flex-end;
 
 }
 
@@ -246,10 +280,8 @@ i {color: #000}
 }
 
 .nav-wrapper {
-	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
-  display: -ms-flexbox;      /* TWEENER - IE 10 */
-  display: -webkit-flex;     /* NEW - Chrome */
+	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */     /* NEW - Chrome */
   display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
 	width: 100%;
 	border-right: 0px;
@@ -267,28 +299,33 @@ i {color: #000}
 
 
 .nav-toggle {
-	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */         /* OLD - Firefox 19- (buggy but mostly works) */
   display: -ms-flexbox;      /* TWEENER - IE 10 */
   display: -webkit-flex;     /* NEW - Chrome */
-  display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  /*display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */*/
 	margin: 10px 20px;
-	flex-direction: row;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
 }
 
 .nav-toggle span {
-	align-items: flex-end;
+	-webkit-box-align: end;
+	    -ms-flex-align: end;
+	        align-items: flex-end;
 }
 
 .mobilenav.is-open {
-	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
-  display: -ms-flexbox;      /* TWEENER - IE 10 */
-  display: -webkit-flex;     /* NEW - Chrome */
+	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */     /* NEW - Chrome */
   display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
-	justify-content: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	width: 100%;
-	transform: translateY(20%);
+	-webkit-transform: translateY(20%);
+	        transform: translateY(20%);
 
 
 }
@@ -304,12 +341,19 @@ i {color: #000}
 
 .about {
 	min-height: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 }
 
 .about .image {
-	order: -1;
+	-webkit-box-ordinal-group: 0;
+	    -ms-flex-order: -1;
+	        order: -1;
 	width: auto;
 	height: 300px;
 	margin: -300px 0, 0, 0;
