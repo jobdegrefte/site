@@ -3,9 +3,11 @@
 html {
 	height: 100%;
 }
+p {
+	font-family: 'Merriweather', Times, serif;
+}
 
 .container {
-	font-family: 'Merriweather', Times, serif;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
