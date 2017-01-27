@@ -6,6 +6,7 @@ html {
 
 .container {
 	font-family: 'Merriweather', Times, serif;
+	line-height: 150%;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
