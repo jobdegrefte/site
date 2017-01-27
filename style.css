@@ -6,6 +6,7 @@ html {
 
 .container {
 	font-family: 'Merriweather', Times, serif;
+	line-height: 250%;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -146,6 +147,7 @@ html {
 
 h1 {
 	text-align: center;
+	line-height: 300%;
 }
 
 h2 {
@@ -173,10 +175,6 @@ td,th{
 
 a {
 	color: black;
-}
-
-p {
-		line-height: 150%;
 }
 
 .about {
