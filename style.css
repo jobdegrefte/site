@@ -91,8 +91,8 @@ html {
 	width: 100%;
 	background: white;
 	padding: 30px 0 20px;
-	-webkit-transform: translateY(-100%);
-	        transform: translateY(-100%);
+	-webkit-transform:translateY(-100%);
+	        transform:translateY(-100%);
 }
 
 .mobilenav ul {
@@ -302,7 +302,7 @@ i {color: #000}
 	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */         /* OLD - Firefox 19- (buggy but mostly works) */
   display: -ms-flexbox;      /* TWEENER - IE 10 */
   display: -webkit-flex;     /* NEW - Chrome */
-  /*display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */*/
+  display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
 	margin: 10px 20px;
 	-webkit-box-orient: horizontal;
 	-webkit-box-direction: normal;
@@ -320,12 +320,10 @@ i {color: #000}
 	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */         /* OLD - Firefox 19- (buggy but mostly works) */
   display: -ms-flexbox;      /* TWEENER - IE 10 */     /* NEW - Chrome */
   display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
-	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
 	width: 100%;
-	-webkit-transform: translateY(20%);
-	        transform: translateY(20%);
+	justify-content: center;
+	-webkit-transform:translateY(20%);
+	        transform:translateY(20%);
 
 
 }
