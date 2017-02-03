@@ -174,7 +174,7 @@ td,th{
  }
 
 a {
-	color: black;
+	color: red;
 }
 
 .about {
@@ -221,9 +221,19 @@ a {
 
 }
 
-.sitenav a {
+.sitenav ul a {
 	text-decoration: none;
 	color: black;
+}
+
+.sitenav a {
+	text-decoration: none;
+	color: red;
+	text-align: right;
+}
+.email {
+	text-align: right;
+	margin-top: 50px;
 }
 
 .sitenav li {
