@@ -296,6 +296,7 @@ i {color: #000}
   display: -ms-flexbox;      /* TWEENER - IE 10 */     /* NEW - Chrome */
   display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
 	width: 100%;
+	height: auto;
 	border-right: 0px;
 	box-sizing: border-box;
 }
